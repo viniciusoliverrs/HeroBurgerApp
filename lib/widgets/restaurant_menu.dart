@@ -13,6 +13,8 @@ class RestaurantMenu extends StatelessWidget {
     return Expanded(
       child: ListView.builder(
         itemCount: 5,
+        shrinkWrap: true,
+        physics: const NeverScrollableScrollPhysics(),
         itemBuilder: (context, index) {
           return Padding(
             padding: const EdgeInsets.symmetric(horizontal: 10),
